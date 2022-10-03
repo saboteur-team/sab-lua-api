@@ -8,6 +8,9 @@
 		"Lua.runtime.builtin": {
 			"basic": "default",
 			"string": "default"
+		},
+		"Lua.format.defaultConfig": {
+			"max_line_length": "200"
 		}
 	}
 }
