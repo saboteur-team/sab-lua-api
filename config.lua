@@ -1,3 +1,5 @@
+---@diagnostic disable: lowercase-global
+
 name = "The Saboteur Lua API"
 
 words = {

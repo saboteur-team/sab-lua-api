@@ -3,7 +3,7 @@
 --[[
     Saboteur handle type, wrapping a PblCRC.
 ]]
----@alias Handle userdata 
+---@class Handle : userdata
 
 --[[
     Gives access to Util functions.
