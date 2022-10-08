@@ -91,7 +91,7 @@ function HUD.LoadObject(hudType, movieName) end
 function HUD.UnloadObject(hudType) end
 
 --[[
-    TODO
+    Adds a new directional arrow at the specified location.
 ]]
 ---@param handle Handle # TODO
 ---@param x number # TODO
@@ -99,7 +99,10 @@ function HUD.UnloadObject(hudType) end
 ---@param z number # TODO
 function HUD.ArrowOn(handle, x, y, z) end
 
-function HUD.ArrowOff(handle, x, y, z) end
+--[[
+    Turns off the directional arrow.
+]]
+function HUD.ArrowOff() end
 
 --[[
     Marker minimap icon for the objective.

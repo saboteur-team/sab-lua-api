@@ -1,29 +1,15 @@
 ---@meta
 
 --[[
-    Saboteur handle type, wrapping a PblCRC.
+    Saboteur handle type, wrapping a PblCRC in a userdata type.
 ]]
 ---@class Handle : userdata
 
 --[[
     Gives access to Util functions.
 ]]
+---@class Util
 Util = {}
-
----@param name string
----@return Handle
-function Util.GetHandleByName(name) end
-
----@param handle Handle
----@return string
-function Util.GetNameFromHandle(handle) end
-
----@param handle Handle
----@return number
-function Util.GetIntFromHandle(handle) end
-
----@param callback string
-function Util.CreateEvent(asd, callback, asd) end
 
 --ActivateAmbush
 --AddInterior
@@ -44,7 +30,15 @@ function Util.CreateEvent(asd, callback, asd) end
 --ClearDisguiseStartedCallback
 --ClearLostDisguiseCallback
 --ClearMiniZepSpline
---CreateEvent
+
+--[[
+    TODO
+]]
+---@param event table
+---@param callback string
+---@param asd any
+function Util.CreateEvent(event, callback, asd) end
+
 --CreateExecutionScene
 --CreateExplosion
 --DisableDisguising
@@ -69,9 +63,29 @@ function Util.CreateEvent(asd, callback, asd) end
 --GetCRC
 --GetEditNodeContents
 --GetGameTime
---GetHandleByName
---GetIntFromHandle
+
+--[[
+    TODO
+]]
+---@param name string
+---@return Handle
+function Util.GetHandleByName(name) end
+
+--[[
+    TODO
+]]
+---@param handle Handle
+---@return number
+function Util.GetIntFromHandle(handle) end
+
 --GetInteriorNameByScript
 --GetInteriorScriptByName
---GetNameFromHandle
+
+--[[
+    TODO
+]]
+---@param handle Handle
+---@return string
+function Util.GetNameFromHandle(handle) end
+
 --GetPlayersInterior
