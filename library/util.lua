@@ -37,7 +37,9 @@ Util = {}
 ---@param event table
 ---@param callback string
 ---@param asd any
-function Util.CreateEvent(event, callback, asd) end
+---@return Handle
+function Util.CreateEvent(event, callback, asd)
+end
 
 --CreateExecutionScene
 --CreateExplosion
@@ -59,6 +61,21 @@ function Util.CreateEvent(event, callback, asd) end
 --ExitInterior
 --FindObjectHandle
 --FindSafeSpawnPoint
+
+--[[
+    Finds a safe spawn point close to a coordinate.
+]]
+---@param leaderX number # Leader X coordinate.
+---@param leaderY number # Leader Y coordinate.
+---@param leaderZ number # Leader Z coordinate.
+---@param minDistance number # Minimum distance from leader. Maximum 5.0!
+---@param maxDistance number # Maximum distance from leader.
+---@return number spawnX
+---@return number spawnY
+---@return number spawnZ
+function Util.FindSafeSpawnPoint(leaderX, leaderY, leaderZ, minDistance, maxDistance)
+end
+
 --FreezeMiniZep
 --GetCRC
 --GetEditNodeContents
@@ -69,14 +86,16 @@ function Util.CreateEvent(event, callback, asd) end
 ]]
 ---@param name string
 ---@return Handle
-function Util.GetHandleByName(name) end
+function Util.GetHandleByName(name)
+end
 
 --[[
     TODO
 ]]
 ---@param handle Handle
 ---@return number
-function Util.GetIntFromHandle(handle) end
+function Util.GetIntFromHandle(handle)
+end
 
 --GetInteriorNameByScript
 --GetInteriorScriptByName
@@ -86,6 +105,14 @@ function Util.GetIntFromHandle(handle) end
 ]]
 ---@param handle Handle
 ---@return string
-function Util.GetNameFromHandle(handle) end
+function Util.GetNameFromHandle(handle)
+end
 
 --GetPlayersInterior
+
+--[[
+    Kills an event.
+]]
+---@param event Handle
+function Util.KillEvent(event)
+end
