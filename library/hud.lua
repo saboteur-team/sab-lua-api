@@ -32,7 +32,8 @@ HUD = {}
     Sets the HUD template.
 ]]
 ---@param templateId HUDTemplateId # TODO
-function HUD.SetTemplate(templateId) end
+function HUD.SetTemplate(templateId)
+end
 
 ---@alias HUDTypes integer
 ---| 0 # Credits
@@ -82,13 +83,15 @@ function HUD.SetTemplate(templateId) end
 ]]
 ---@param hudType HUDTypes # TODO
 ---@param movieName? string # TODO
-function HUD.LoadObject(hudType, movieName) end
+function HUD.LoadObject(hudType, movieName)
+end
 
 --[[
     DEBUG FUNCTION! Deletes a HUD object by the given HUD type.
 ]]
 ---@param hudType HUDTypes # TODO
-function HUD.UnloadObject(hudType) end
+function HUD.UnloadObject(hudType)
+end
 
 --[[
     Adds a new directional arrow at the specified location.
@@ -97,12 +100,14 @@ function HUD.UnloadObject(hudType) end
 ---@param x number # TODO
 ---@param y number # TODO
 ---@param z number # TODO
-function HUD.ArrowOn(handle, x, y, z) end
+function HUD.ArrowOn(handle, x, y, z)
+end
 
 --[[
     Turns off the directional arrow.
 ]]
-function HUD.ArrowOff() end
+function HUD.ArrowOff()
+end
 
 --[[
     Marker minimap icon for the objective.
@@ -139,14 +144,16 @@ function HUD.ArrowOff() end
 ---@param a7? number # TODO
 ---@param a8? string # TODO
 ---@return boolean # TODO
-function HUD.SetObjectiveMarker(handle, minimapIcon, objectiveMarker, showMinimapMarker, showWorldMarker, rotateOn, a7, a8) end
+function HUD.SetObjectiveMarker(handle, minimapIcon, objectiveMarker, showMinimapMarker, showWorldMarker, rotateOn, a7, a8)
+end
 
 --[[
     Removes an objective marker by it's handle.
 ]]
 ---@param handle Handle # TODO
 ---@return boolean # TODO
-function HUD.RemoveObjectiveMarker(handle) end
+function HUD.RemoveObjectiveMarker(handle)
+end
 
 --[[
     Shows or hides the minimap or world icon for an objective identified by the given handle.
@@ -154,33 +161,38 @@ function HUD.RemoveObjectiveMarker(handle) end
 ---@param handle Handle # TODO
 ---@param showMinimapIcon boolean # TODO
 ---@param showWorldIcon boolean # TODO
-function HUD.ShowObjectiveMarker(handle, showMinimapIcon, showWorldIcon) end
+function HUD.ShowObjectiveMarker(handle, showMinimapIcon, showWorldIcon)
+end
 
 --[[
     Flashes the current objective marker.
 ]]
 ---@param handle Handle # TODO
 ---@return boolean # TODO
-function HUD.FlashObjectiveMarker(handle, showMinimapIcon, showWorldIcon) end
+function HUD.FlashObjectiveMarker(handle, showMinimapIcon, showWorldIcon)
+end
 
 --[[
     Clears all objective markers.
 ]]
-function HUD.ClearAllObjectiveMarkers() end
+function HUD.ClearAllObjectiveMarkers()
+end
 
 --[[
     TODO
 ]]
 ---@param handle Handle # TODO
 ---@return boolean # TODO
-function HUD.AddGroundDecal(handle) end
+function HUD.AddGroundDecal(handle)
+end
 
 --[[
     TODO
 ]]
 ---@param handle Handle # TODO
 ---@return boolean # TODO
-function HUD.RemoveGroundDecal(handle) end
+function HUD.RemoveGroundDecal(handle)
+end
 
 --[[
     Creates a new timer, with optional setting to change the color of the timer after a given time.
@@ -191,18 +203,21 @@ function HUD.RemoveGroundDecal(handle) end
 ---@param r? number # the red component of the color
 ---@param g? number # the green component of the color
 ---@param b? number # the blue component of the color
-function HUD.AddTimer(time, countUp, colorChangeTime, r, g, b) end
+function HUD.AddTimer(time, countUp, colorChangeTime, r, g, b)
+end
 
 --[[
     Pauses the current timer.
 ]]
 ---@param pause boolean # true to pause and false to resume
-function HUD.PauseTimer(pause) end
+function HUD.PauseTimer(pause)
+end
 
 --[[
     Removes the current timer.
 ]]
-function HUD.RemoveTimer() end
+function HUD.RemoveTimer()
+end
 
 --[[
     TODO
@@ -211,23 +226,27 @@ function HUD.RemoveTimer() end
 ---@param a2 string # TODO
 ---@param a3 string # TODO
 ---@return boolean # TODO
-function HUD.SetTutorialText(a1, a2, a3) end
+function HUD.SetTutorialText(a1, a2, a3)
+end
 
 --[[
     TODO
 ]]
-function HUD.ClearTutorialText() end
+function HUD.ClearTutorialText()
+end
 
 --[[
     TODO
 ]]
 ---@param tutorials table #
-function HUD.AddLoadScreenTutorials(tutorials) end
+function HUD.AddLoadScreenTutorials(tutorials)
+end
 
 --[[
     TODO
 ]]
-function HUD.ClearLoadScreenTutorials() end
+function HUD.ClearLoadScreenTutorials()
+end
 
 --[[
     TODO
@@ -240,7 +259,8 @@ function HUD.ClearLoadScreenTutorials() end
 ---@param newLine? boolean # TODO
 ---@param precursor? integer|Handle # TODO
 ---@return Handle # TODO
-function HUD.AddUpdateBoxText(message, duration, r, g, b, newLine, precursor) end
+function HUD.AddUpdateBoxText(message, duration, r, g, b, newLine, precursor)
+end
 
 --[[
     TODO
@@ -251,7 +271,8 @@ function HUD.AddUpdateBoxText(message, duration, r, g, b, newLine, precursor) en
 ---@param a4 any # TODO
 ---@param a5 any # TODO
 ---@param a6? boolean # TODO
-function HUD.AddContraband(a1, a2, a3, a4, a5, a6) end
+function HUD.AddContraband(a1, a2, a3, a4, a5, a6)
+end
 
 --[[
     TODO
@@ -263,7 +284,8 @@ function HUD.AddContraband(a1, a2, a3, a4, a5, a6) end
 ---@param b? number # the blue component of the color
 ---@param name? string # TODO
 ---@return Handle # TODO
-function HUD.AddSubtitle(message, duration, r, g, b, name) end
+function HUD.AddSubtitle(message, duration, r, g, b, name)
+end
 
 --[[
     TODO
@@ -274,14 +296,16 @@ function HUD.AddSubtitle(message, duration, r, g, b, name) end
 ---@param g? number # the green component of the color
 ---@param b? number # the blue component of the color
 ---@return Handle # TODO
-function HUD.AddToolTip(message, duration, r, g, b) end
+function HUD.AddToolTip(message, duration, r, g, b)
+end
 
 --[[
     TODO
 ]]
 ---@param hudType HUDTypes # TODO
 ---@param handle Handle # TODO
-function HUD.RemoveMessage(hudType, handle) end
+function HUD.RemoveMessage(hudType, handle)
+end
 
 --[[
     TODO
@@ -289,7 +313,8 @@ function HUD.RemoveMessage(hudType, handle) end
 ---@param hudType HUDTypes # TODO
 ---@param handle Handle # TODO
 ---@param newMessage string # TODO
-function HUD.ModifyMessageString(hudType, handle, newMessage) end
+function HUD.ModifyMessageString(hudType, handle, newMessage)
+end
 
 --[[
     TODO!
@@ -300,7 +325,8 @@ function HUD.ModifyMessageString(hudType, handle, newMessage) end
 ---@param r? number # the red component of the color
 ---@param g? number # the green component of the color
 ---@param b? number # the blue component of the color
-function HUD.ModifyMessageColor(hudType, handle, r, g, b) end
+function HUD.ModifyMessageColor(hudType, handle, r, g, b)
+end
 
 --[[
     Objective type.
@@ -340,69 +366,99 @@ function HUD.ModifyMessageColor(hudType, handle, r, g, b) end
 ---@param status ObjectiveStatus # TODO
 ---@param focusPtName integer # TODO
 ---@return integer # TODO
-function HUD.AddObjective(objectiveType, objectiveStr, priority, parent, optional, status, focusPtName) end
+function HUD.AddObjective(objectiveType, objectiveStr, priority, parent, optional, status, focusPtName)
+end
 
-function HUD.SetupProgressBar() end
+function HUD.SetupProgressBar()
+end
 
-function HUD.SetProgressBarValue() end
+function HUD.SetProgressBarValue()
+end
 
-function HUD.GetProgressBarValue() end
+function HUD.GetProgressBarValue()
+end
 
-function HUD.AddProgressBarCallback() end
+function HUD.AddProgressBarCallback()
+end
 
-function HUD.SetObjectiveStatus() end
+function HUD.SetObjectiveStatus()
+end
 
-function HUD.KeepObjectivesVisible() end
+function HUD.KeepObjectivesVisible()
+end
 
-function HUD.SetObjectiveText() end
+function HUD.SetObjectiveText()
+end
 
-function HUD.RemoveObjective() end
+function HUD.RemoveObjective()
+end
 
-function HUD.ClearAllObjectives() end
+function HUD.ClearAllObjectives()
+end
 
-function HUD.SetGPSTarget() end
+function HUD.SetGPSTarget()
+end
 
-function HUD.SetGPSTargetToFocus() end
+function HUD.SetGPSTargetToFocus()
+end
 
-function HUD.ClearGPSTarget() end
+function HUD.ClearGPSTarget()
+end
 
-function HUD.SetGPSCourse() end
+function HUD.SetGPSCourse()
+end
 
-function HUD.ClearGPSCourse() end
+function HUD.ClearGPSCourse()
+end
 
-function HUD.SetMinimapZoom() end
+function HUD.SetMinimapZoom()
+end
 
-function HUD.SetPauseMenuPos() end
+function HUD.SetPauseMenuPos()
+end
 
-function HUD.ClearPauseMenuPos() end
+function HUD.ClearPauseMenuPos()
+end
 
-function HUD.AddButtonPrompt() end
+function HUD.AddButtonPrompt()
+end
 
-function HUD.ClearButtonPrompt() end
+function HUD.ClearButtonPrompt()
+end
 
-function HUD.ShowMissionTitle() end
+function HUD.ShowMissionTitle()
+end
 
-function HUD.FlashRestrictedAreas() end
+function HUD.FlashRestrictedAreas()
+end
 
-function HUD.SetWaypoint() end
+function HUD.SetWaypoint()
+end
 
-function HUD.ClearWaypoint() end
+function HUD.ClearWaypoint()
+end
 
-function HUD.HasWaypoint() end
+function HUD.HasWaypoint()
+end
 
-function HUD.GetWaypointPosition() end
+function HUD.GetWaypointPosition()
+end
 
-function HUD.SetEnableAllGPSEdgesInTrigger() end
+function HUD.SetEnableAllGPSEdgesInTrigger()
+end
 
-function HUD.SetTransitionScreenParams() end
+function HUD.SetTransitionScreenParams()
+end
 
-function HUD.PlayAdvancedTutorial() end
+function HUD.PlayAdvancedTutorial()
+end
 
-function HUD.StartMiniGame() end
+function HUD.StartMiniGame()
+end
 
-function HUD.RemoveCheckpointFromMap() end
+function HUD.RemoveCheckpointFromMap()
+end
 
---[[
 --[[
     TODO
 ] ]
