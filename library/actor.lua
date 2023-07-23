@@ -30,3 +30,9 @@ end
 ---@return boolean
 function Actor.IsAlive(actor)
 end
+
+--[[
+    Plays an animation to the given bone.
+]]
+function Actor.PlayAnimationToBone()
+end
